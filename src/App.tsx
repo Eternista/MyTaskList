@@ -1,17 +1,24 @@
-import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/sass/style.scss';
+import Header from './components/partials/Header';
+import Main from './components/partials/Main';
+import Footer from './components/partials/Footer';
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLogged, setIsLogged] = useState<boolean>(true);
+  return isLogged === true ? (
+        <>
+          <Header/>
+          <Main/>
+          <Footer/>
+        </>
 
-  return (
-    <>
-        <button className='btn btn-primary' onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-    </>
-  )
+    ) : (
+      <>
+        Nope
+      </>
+    )
 }
 
 export default App
