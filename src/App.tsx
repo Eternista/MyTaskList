@@ -7,18 +7,15 @@ import { useState } from 'react';
 
 function App() {
   const [isLogged, setIsLogged] = useState<boolean>(true);
-  return isLogged === true ? (
-        <>
-          <Header/>
-          <Main/>
-          <Footer/>
-        </>
-
-    ) : (
-      <>
-        Nope
-      </>
-    )
+  return isLogged ? (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  ) : (
+    <>Nope</>
+  );
 }
 
-export default App
+export default App;
