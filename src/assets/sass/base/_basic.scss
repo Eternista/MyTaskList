@@ -8,6 +8,8 @@ $colors: ("primary": $primary, "success": $success, "failure": $failure, "meetin
 
 body {
     font-family: $baseFont;
+    color: #fff !important;
+    background-color: #222;
 }
 
 h1, h2, h3 {
@@ -21,6 +23,6 @@ h1, h2, h3 {
     height: 2px;
     width: 250px;
     &-main {
-        background: linear-gradient(-90deg, $primary 0% 50% , #333 50% 100% );
+        background: linear-gradient(-90deg, $primary 0% 50% , #fff 50% 100% );
     }
 }
