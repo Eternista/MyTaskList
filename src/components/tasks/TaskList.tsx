@@ -15,7 +15,21 @@ const TaskListJson = {
       desc: 'Girlfriend ask for it',
       creationDate: '23.07.2024',
       termDate: '02.08.2024',
-      icon: 'Programming',
+      icon: 'coding',
+    },
+    {
+      title: 'Clean up some code',
+      desc: 'Girlfriend ask for it',
+      creationDate: '23.07.2024',
+      termDate: '02.08.2024',
+      icon: 'house',
+    },
+    {
+      title: 'Clean up some code',
+      desc: 'Girlfriend ask for it',
+      creationDate: '23.07.2024',
+      termDate: '02.08.2024',
+      icon: 'work',
     },
   ],
 };
